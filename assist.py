@@ -4,7 +4,7 @@ import pywhatkit
 import datetime
 import wikipedia
 import webbrowser
-
+from googlesearch import search
 
 listener = sr.Recognizer()
 engine = pyttsx3.init()
@@ -53,6 +53,7 @@ def runn():
         try:
             person = command.replace('who is', '')
             info = wikipedia.summary(person, 1)
+            webbrowser.open_new_tab(search("Wikipedia" + info, num_results=1)[0])
             talk(info)
         except:
             talk("I couldn't find a wikipedia page on that topic, let's try google search")
@@ -62,6 +63,7 @@ def runn():
         try:
             thing = command.replace('what is', '')
             info = wikipedia.summary(thing, 1)
+            webbrowser.open_new_tab(search("Wikipedia" + info, num_results=1)[0])
             talk(info)
         except:
             talk("I couldn't find a wikipedia page on that topic, let's try google search")
@@ -71,6 +73,7 @@ def runn():
         try:
             thing = command.replace('tell me more about', '')
             info = wikipedia.summary(thing, 1)
+            webbrowser.open_new_tab(search("Wikipedia" + info, num_results=1)[0])
             talk(info)
         except:
             talk("I couldn't find a wikipedia page on that topic, let's try google search")
