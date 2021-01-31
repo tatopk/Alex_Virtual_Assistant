@@ -1,7 +1,8 @@
 import tkinter as tk
 import assist
 
-f = open("insert.txt", "r")
+f = open("readme.md", "r")
+tmp = 1
 
 root = tk.Tk()
 root.geometry("500x600")
@@ -13,7 +14,11 @@ bt.place(relx=0.19, rely=0.8)
 T.place(relx=0.08, rely=0.04)
 
 for x in f:
-    T.insert(tk.END, x)
+    tmp += 1
+    if tmp > 4:
+        T.insert(tk.END, x)
+
 
 assist.startTalk()
+f.close()
 root.mainloop()
