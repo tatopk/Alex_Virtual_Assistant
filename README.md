@@ -1,5 +1,6 @@
 # Alex_Virtual_Assistant
 Virtual Assistant like Alexa, except it's Alex and much simpler
+Python 3.6 or lower required.
 
 Commands:
 
