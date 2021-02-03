@@ -17,7 +17,7 @@ what is -------- - Searchies on wikipedia, if not found,then on google.
 
 tell me more about -------- - Searchies on wikipedia, if not found,then on google.
 
-search -------- - Searcheas on google
+search -------- - Searches on google
 
 Used libraries:
 
