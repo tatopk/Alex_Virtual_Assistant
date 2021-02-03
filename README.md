@@ -18,3 +18,21 @@ what is -------- - Searchies on wikipedia, if not found,then on google.
 tell me more about -------- - Searchies on wikipedia, if not found,then on google.
 
 search -------- - Searcheas on google
+
+Used libraries:
+
+Tkinter - Python standard library
+
+Pyttsx3 - pip install pyttsx3
+
+PyWhatKit - pip install pywhatkit
+
+Datetime - Python standard library
+
+Wikipedia - pip install wikipedia
+
+Webbrowser - pip install pycopy-webbrowser
+
+Googlesearch - pip install googlesearch-python
+
+Speech_Recognition - pip install SpeechRecognition
