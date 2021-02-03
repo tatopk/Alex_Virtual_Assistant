@@ -15,7 +15,7 @@ T.place(relx=0.08, rely=0.04)
 
 for x in f:
     tmp += 1
-    if tmp > 4:
+    if 4 < tmp < 23:
         T.insert(tk.END, x)
 
 

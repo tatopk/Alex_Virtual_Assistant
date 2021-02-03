@@ -5,6 +5,9 @@ import datetime
 import wikipedia
 import webbrowser
 from googlesearch import search
+import logging
+
+logging.basicConfig(filename='alex.log', level=logging.INFO)
 
 listener = sr.Recognizer()
 engine = pyttsx3.init()
@@ -28,8 +31,8 @@ def take_command():
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             command = command.lower()
-    except:
-        pass
+    except Exception as e:
+        logging.error('Error occurred ' + str(e))
     return command
 
 
