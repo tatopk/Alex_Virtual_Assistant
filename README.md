@@ -36,3 +36,5 @@ Webbrowser - pip install pycopy-webbrowser
 Googlesearch - pip install googlesearch-python
 
 Speech_Recognition - pip install SpeechRecognition
+
+Logging - Python standard library
